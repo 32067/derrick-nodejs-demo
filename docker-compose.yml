@@ -1,0 +1,9 @@
+version: "2"
+services:
+  web:
+    build:
+        context: .
+    image: 192.168.0.31/dev/nodejs
+    ports:
+      - 3000
+    restart: always
