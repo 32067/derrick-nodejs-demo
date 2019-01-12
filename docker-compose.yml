@@ -1,0 +1,9 @@
+version: "2"
+services:
+  web:
+    build:
+        context: .
+    image: ${REGISTRY_URL}/${NS}/derrick-nodejs-demo:${IMAGE_TAG}
+    ports:
+      - 3000
+    restart: always
